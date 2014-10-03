@@ -15,6 +15,7 @@ namespace FlappyBird
     {
         public float Scroll_X;
 
+
         public Rectangle CollsionBox;
 
         public bool isAlive = true;
@@ -52,8 +53,8 @@ namespace FlappyBird
                 }
 
             //Background
-            SpriteSheet.Draw(getTexture, sB, new Rectangle(0, 0, 144, 256), new Vector2(240 + Scroll_X, getScreenSize.Y / 2), 0);
-            SpriteSheet.Draw(getTexture, sB, new Rectangle(0, 0, 144, 256), new Vector2((240 + Scroll_X) + 480, getScreenSize.Y / 2), 0);
+            SpriteSheet.Draw(getTexture, sB, new Rectangle(0, 0, 144, 256), new Vector2(getScreenSize.X / 2, getScreenSize.Y / 2), 0);
+            //SpriteSheet.Draw(getTexture, sB, new Rectangle(0, 0, 144, 256), new Vector2((240 + Scroll_X) + 480, getScreenSize.Y / 2), 0);
 
             //Pipes
             if (getPlayer.ControlsEnabled)
